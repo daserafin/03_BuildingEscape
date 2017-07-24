@@ -1,5 +1,12 @@
+########################
+# Unreal Derived Files #
+########################
 */Binaries
 */Build
 */DerivedDataCache
 */Intermediate
 */Saved
+BuildingEscape/Content/StarterContent/
+*.db
+*.db-shm
+*.db-wal

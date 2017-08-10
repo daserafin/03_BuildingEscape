@@ -9,6 +9,7 @@
 #include "CollisionQueryParams.h"
 #include "Components/InputComponent.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
+#include "Components/PrimitiveComponent.h"
 
 #define OUT  //In order not to remember the out parameters of couple functions
 
@@ -79,8 +80,10 @@ void UGrabber::Grab()
 		PhysicsHandle->GrabComponentAtLocationWithRotation(
 			ComponentToGrab,
 			NAME_None, //no bones needed
-			ActorHit->GetActorLocation(),
-			ActorHit->GetActorRotation()
+			//ActorHit->GetActorLocation(),
+			//ActorHit->GetActorRotation()
+			ComponentToGrab->GetOwner()->GetActorLocation(),
+			ComponentToGrab->GetOwner()->GetActorRotation()
 		);
 	}
 }

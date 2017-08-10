@@ -32,9 +32,12 @@ private:
 
 	UInputComponent* InputComponent = nullptr;
 
-	//ray-cast and grab what's in reach
+	//Ray-cast and grab what's in reach
 	void Grab();
+
+	//Called when grab is released
 	void Release();
+
 	//Find attached component
 	void FindPhysicsHandleComponent();
 
@@ -42,5 +45,11 @@ private:
 	void SetupInputComponent();
 
 	//Return hit for first physics body in reach
-	FHitResult GetFirstPhysicsBodyInReach() const;
+	FHitResult GetFirstPhysicsBodyInReach();
+
+	//Returns current start of reach line
+	FVector GetReachLineStart();
+
+	//Returns current end of reach line
+	FVector GetReachLineEnd();
 };

@@ -1,6 +1,3 @@
-# 03_BuildingEscape
-Second game in the Unreal Developer course, the first one built on the Unreal Engine.
-
 1 Intro, Notes & Section 3 Assets
 
     Welcome to our first Unreal editor section.
@@ -69,6 +66,7 @@ A Pointers Primer
 Useful Links
 
     Epic Wiki - Logs, Printing Messages to Yourself During Runtime
+    https://wiki.unrealengine.com/Logs,_Printing_Messages_To_Yourself_During_Runtime#Related_Tutorial_
 
 9 Accessing Object Names
 
@@ -293,3 +291,73 @@ Useful Links
     Pattern: for (const auto* Iterator : Array)
     How to find an actor’s mass
     Tweaking and testing our mass values.
+
+36 Debugging Game Issues
+
+    Are you using source control? If not start now
+    You can “binary search” commits quite fast
+    For example 1024 commits takes max 10 tries!
+    Think “what changed” and “possible side-effects”
+    Remember you can eject with F8 during play.
+
+37 Managing Texture Tiling
+
+    You may want to re-size objects (e.g. panels)
+    Doing so will stretch the texture
+    You can re-scale a few ways
+    One way is in the material blueprint
+    UV mapping because we ran out of letters!
+    Using the TexCoord node in the material editor.
+
+38 Pointer Protection Process
+
+    Horrible crashes when we follow a nullptr
+    We must always check pointers before use
+    When declaring always initialise to nullptr
+    Look for * in your .h files to help find pointers
+    Also check before every use and handle nullptr
+    Sometimes we may chose not to, e.g. Owner.
+
+39 Exposing Events to Blueprint
+
+    Sometimes Blueprint’s the better choice
+    For example defining our door swing as a curve
+    We can create an event called OnOpenRequest
+    Using UPROPERTY (BlueprintAssignable)
+
+40 Using Blueprint Timeline
+
+    The Timeline node in Blueprint has a curve editor
+    This is ideal for defining our door movement
+    How to use Timeline curves in Blueprint
+    Setting rotation from a Timeline.
+
+41 Everything in its Place
+
+    Using Blueprint has superseded some code
+    It’s important there’s only 1 place per parameter
+    Creating a 2nd event: OnClose
+
+42 Using Variables in Blueprint
+
+    Not all doors have the same absolute rotation
+    We want to store the door’s rotation at the start
+    … then use this value to make a relative rotation
+    We can use Blueprint variables for this
+    Making doors that face any direction work.
+
+43 SFX & Audio Clips
+
+    We’re going to trigger a simple sound in Blueprint
+    Later in the course we’ll use C++ too
+    However we’ll always reference our assets via BP
+    How to trigger a 3D sound.
+
+XX Section 3 Wrap-Up
+
+    Congratulations on another complete section
+    You’ve learnt so much, look at the lecture titles
+    Please carry-on a little on your own and share
+    Attached are useful resources
+    Start the next section as soon as you’re finished.
+

@@ -352,12 +352,3 @@ Useful Links
     Later in the course we’ll use C++ too
     However we’ll always reference our assets via BP
     How to trigger a 3D sound.
-
-XX Section 3 Wrap-Up
-
-    Congratulations on another complete section
-    You’ve learnt so much, look at the lecture titles
-    Please carry-on a little on your own and share
-    Attached are useful resources
-    Start the next section as soon as you’re finished.
-

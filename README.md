@@ -10,3 +10,7 @@
 
 #### What's included:
 ![Preview-explained](img/preview_explained.jpg)
+
+1. TriggerVolume, which handles OpenDoor event. If there's enough mass is inside Trigger Volume -> open the doors.
+2. Openable doors (StaticMeshComponent), depends on TriggerVolume^^
+3. Objects that the player can grab and move throughout the room.
